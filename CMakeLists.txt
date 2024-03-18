@@ -8,4 +8,6 @@ add_executable(Proj main.cpp
         data_structures/MutablePriorityQueue.h
         data_structures/UFDS.cpp
         data_structures/UFDS.h
-        menu.cpp)
+        menu.cpp
+        functions.h
+        functions.cpp)

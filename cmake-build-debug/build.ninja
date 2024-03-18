@@ -67,6 +67,12 @@ build CMakeFiles/Proj.dir/menu.cpp.obj: CXX_COMPILER__Proj_unscanned_Debug C$:/U
   OBJECT_DIR = CMakeFiles\Proj.dir
   OBJECT_FILE_DIR = CMakeFiles\Proj.dir
 
+build CMakeFiles/Proj.dir/functions.cpp.obj: CXX_COMPILER__Proj_unscanned_Debug C$:/Users/joaop/uni/DA/Proj/functions.cpp || cmake_object_order_depends_target_Proj
+  DEP_FILE = CMakeFiles\Proj.dir\functions.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Proj.dir
+  OBJECT_FILE_DIR = CMakeFiles\Proj.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Proj
@@ -75,7 +81,7 @@ build CMakeFiles/Proj.dir/menu.cpp.obj: CXX_COMPILER__Proj_unscanned_Debug C$:/U
 #############################################
 # Link the executable Proj.exe
 
-build Proj.exe: CXX_EXECUTABLE_LINKER__Proj_Debug CMakeFiles/Proj.dir/main.cpp.obj CMakeFiles/Proj.dir/data_structures/UFDS.cpp.obj CMakeFiles/Proj.dir/menu.cpp.obj
+build Proj.exe: CXX_EXECUTABLE_LINKER__Proj_Debug CMakeFiles/Proj.dir/main.cpp.obj CMakeFiles/Proj.dir/data_structures/UFDS.cpp.obj CMakeFiles/Proj.dir/menu.cpp.obj CMakeFiles/Proj.dir/functions.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Proj.dir
