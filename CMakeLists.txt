@@ -10,4 +10,5 @@ add_executable(untitled5
         Proj/WaterSupply.h
         Proj/DataTypes.h
         Proj/DataTypes.h
-        main.cpp)
+        main.cpp
+)
