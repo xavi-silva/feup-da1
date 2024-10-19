@@ -29,6 +29,10 @@ public:
     Edge<T> *getPath() const;
     std::vector<Edge<T> *> getIncoming() const;
 
+    //aditional methods to help code
+    int getResidual() const;
+    void setResidual(int residual);
+
     void setInfo(T info);
     void setVisited(bool visited);
     void setProcesssing(bool processing);
@@ -50,7 +54,7 @@ protected:
     unsigned int indegree; // used by topsort
     double dist = 0;
     Edge<T> *path = nullptr;
-
+    int residual = 0;
     std::vector<Edge<T> *> incoming; // incoming edges
 
     int queueIndex = 0; 		// required by MutablePriorityQueue and UFDS
@@ -239,6 +243,17 @@ template <class T>
 std::vector<Edge<T> *> Vertex<T>::getIncoming() const {
     return this->incoming;
 }
+
+template <class T>
+int Vertex<T>::getResidual() const {
+    return this->residual;
+}
+template <class T>
+void Vertex<T>::setResidual(int residual){
+    this->residual = residual;
+}
+
+
 
 template <class T>
 void Vertex<T>::setInfo(T in) {
@@ -659,4 +674,5 @@ Graph<T>::~Graph() {
     deleteMatrix(distMatrix, vertexSet.size());
     deleteMatrix(pathMatrix, vertexSet.size());
 }
+
 #endif //PROJ_GRAPH_H

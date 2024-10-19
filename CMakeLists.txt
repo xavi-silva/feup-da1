@@ -3,11 +3,9 @@ project(Proj)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Proj main.cpp
+add_executable(Proj
         data_structures/Graph.h
         data_structures/MutablePriorityQueue.h
         data_structures/UFDS.cpp
         data_structures/UFDS.h
-        menu.cpp
-        functions.h
-        functions.cpp)
+)
